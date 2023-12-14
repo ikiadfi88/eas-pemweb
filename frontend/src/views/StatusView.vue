@@ -1,9 +1,23 @@
+<!-- StatusView.vue -->
+
 <script>
-import PesertaList from "../components/PesertaList.vue";
+import CekList from "../components/CekList.vue";
+import CekStatus from "../components/CekStatus.vue";
 
 export default {
   components: {
-    PesertaList,
+    CekList,
+    CekStatus,
+  },
+  data() {
+    return {
+      isCekStatusVisible: true,
+    };
+  },
+  methods: {
+    showCekList() {
+      this.isCekStatusVisible = false;
+    },
   },
 };
 </script>
@@ -11,7 +25,8 @@ export default {
 <template>
   <main class="min-h-full w-full flex flex-col justify-center p-8">
     <div class="w-full h-full justify justify-center flex flex-col mt-3 px-56">
-      <PesertaList />
+      <CekStatus v-if="isCekStatusVisible" @show-CekList="showCekList" />
+      <CekList v-if="!isCekStatusVisible" />
     </div>
   </main>
 </template>

@@ -6,7 +6,7 @@
         <th class="p-3 text-sm font-bold tracking-wide text-white">Nama</th>
         <th class="p-1 text-sm font-bold tracking-wide text-white">Email</th>
         <th class="p-1 text-sm font-bold tracking-wide text-white">Asal Sekolah</th>
-        <th class="p-1 text-sm font-bold tracking-wide text-white">Status</th>
+        <th class="p-1 text-sm font-bold tracking-wide text-white">Info</th>
       </tr>
     </thead>
     <tbody>

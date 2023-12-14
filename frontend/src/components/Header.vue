@@ -31,10 +31,7 @@ export default {
       <Popup @close-Popup="togglePopup" :isPopup="isPopup">
         <AddPeserta @close-Popup="togglePopup" />
       </Popup>
-      <button @click="togglePopup" class="px-6 py-2 bg-green-600 text-white font-bold mb-2 w-fit border-[1.5px] hover:scale-110 transition-all hover:ease-in-out hover:duration-300 rounded-xl text-sm">Cek Status</button>
-      <Popup @close-Popup="togglePopup" :isPopup="isPopup">
-        <AddPeserta @close-Popup="togglePopup" />
-      </Popup>
     </div>
+    <RouterLink to="/status" class="text-slate-300 hover:bg-sky-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Cek Status</RouterLink>
   </div>
 </template>

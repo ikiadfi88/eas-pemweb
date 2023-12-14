@@ -10,7 +10,7 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: "/status/:id",
+      path: "/status",
       name: "status",
       component: () => import("../views/StatusView.vue"),
     },
