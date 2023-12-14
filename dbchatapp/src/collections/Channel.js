@@ -24,6 +24,12 @@ const Channel = {
       type: "text",
       required: true,
     },
+    {
+      name: "chat",
+      label: "Chat",
+      type: "relationship",
+      relationTo: "Chat",
+    },
   ],
 };
 
