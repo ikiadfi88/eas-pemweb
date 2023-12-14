@@ -811,7 +811,7 @@
   "resolved" "https://registry.npmjs.org/qs/-/qs-6.11.2.tgz"
   "version" "6.11.2"
   dependencies:
-    "side-channel" "^1.0.4"
+    "side-peserta" "^1.0.4"
 
 "queue-microtask@^1.2.2":
   "integrity" "sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A=="
@@ -870,9 +870,9 @@
     "gopd" "^1.0.1"
     "has-property-descriptors" "^1.0.0"
 
-"side-channel@^1.0.4":
+"side-peserta@^1.0.4":
   "integrity" "sha512-q5XPytqFEIKHkGdiMIrY10mvLRvnQh42/+GoBlFW3b2LXLE2xxJpZFdm94we0BaoV3RwJyGqg5wS7epxTv0Zvw=="
-  "resolved" "https://registry.npmjs.org/side-channel/-/side-channel-1.0.4.tgz"
+  "resolved" "https://registry.npmjs.org/side-peserta/-/side-peserta-1.0.4.tgz"
   "version" "1.0.4"
   dependencies:
     "call-bind" "^1.0.0"

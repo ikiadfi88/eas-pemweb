@@ -1,23 +1,23 @@
 import { reactive } from "vue";
 
-export const ChannelStore = reactive({
-  Channels: [],
+export const PesertaStore = reactive({
+  Pesertas: [],
 
-  createChannel(Channel) {
-    this.Channels.push(Channel);
+  createPeserta(Peserta) {
+    this.Pesertas.push(Peserta);
   },
 
-  updateChannel(updatedChannel) {
-    const ChannelIndex = this.Channels.findIndex((Channel) => Channel.id === updatedChannel.id);
-    if (ChannelIndex !== -1) {
-      this.Channels.splice(ChannelIndex, 1, updatedChannel);
+  updatePeserta(updatedPeserta) {
+    const PesertaIndex = this.Pesertas.findIndex((Peserta) => Peserta.id === updatedPeserta.id);
+    if (PesertaIndex !== -1) {
+      this.Pesertas.splice(PesertaIndex, 1, updatedPeserta);
     } else {
-      this.Channels.push(updatedChannel);
+      this.Pesertas.push(updatedPeserta);
     }
   },
 
-  deleteAllChannels() {
-    this.Channels = [];
+  deleteAllPesertas() {
+    this.Pesertas = [];
   },
 });
 

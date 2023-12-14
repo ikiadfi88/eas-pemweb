@@ -1,7 +1,7 @@
 import payload from "payload";
 /** @type {import('payload/types').CollectionConfig} */
-const Account = {
-  slug: "Account",
+const Peserta = {
+  slug: "Peserta",
   admin: {
     useAsTitle: "name",
   },
@@ -25,12 +25,27 @@ const Account = {
       required: true,
     },
     {
-      name: "password",
-      label: "Password",
+      name: "school",
+      label: "Asal Sekolah",
       type: "text",
       required: true,
+    },
+    {
+      name: "status",
+      label: "Status",
+      type: "select",
+      options: [
+        { label: "Waiting", value: "1" },
+        { label: "Rejected", value: "2" },
+        { label: "Accepted", value: "3" },
+      ],
+    },
+    {
+      name: "date",
+      label: "Tanggal Pendaftaran",
+      type: "date",
     },
   ],
 };
 
-export default Account;
+export default Peserta;
